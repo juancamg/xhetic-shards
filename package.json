@@ -1,0 +1,16 @@
+{
+  "name": "xhetic-shards",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@catppuccin/vitepress": "^0.1.0",
+    "vitepress": "^1.6.3"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "node node_modules/vitepress/bin/vitepress.js build docs",
+    "preview": "vitepress preview docs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
