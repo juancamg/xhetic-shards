@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-html {
-  font-family: Arial, Helvetica;
+:root {
+  --vp-font-family-base: 'Lexend', sans-serif !important;
+  --vp-font-family-mono: 'Lexend', sans-serif !important;
 }
 
+html, body, .VPApp, .VPDoc, .VPDoc h1, .VPDoc h2, .VPDoc h3, .VPDoc p, .VPDoc div, .VPNav, .VPSidebar, pre, code, .vp-code {
+  font-family: 'Lexend', sans-serif !important;
+}
+
+.dark .VPNavBarTitle a {
+  color: #cba6f7 !important;
+}
+
+.dark .VPDoc h1, .dark .VPDoc h2, .dark .VPDoc h3, .dark .VPDoc h4, .dark .VPDoc h5, .dark .VPDoc h6 {
+  color: #b4befe !important;
+}
+
+.dark .VPDoc a, .dark .VPSidebar a {
+  color: #b4befe !important; 
+}
+
+.dark .VPNavBarMenu a {
+  color: #b4befe !important;
+}
+
+.VPNavBarTitle a:hover, .VPNavBarMenu a:hover, .VPDoc a:hover {
+  color: #c084fc !important; 
+}
+
+.VPSidebar .VPSidebarItem.is-link .VPLink.link:hover, .VPSidebar .VPSidebarItem.is-link .VPLink.link:hover .text {
+  color: #c084fc !important; 
+}
+
+.VPNotFound {
+  text-align: center;
+  padding: 2rem;
+}
+
+.VPNotFound h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(203, 166, 247, 0.3); 
+}
+
+.VPNotFound p {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.dark .VPNotFound {
+  background: #1e1e2e; 
+  border-radius: 8px;
+}

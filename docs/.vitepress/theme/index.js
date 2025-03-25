@@ -1,3 +1,8 @@
-import Default from "vitepress/theme";
-import "@catppuccin/vitepress/theme/mocha/mauve.css";
-export default Default;
+import DefaultTheme from 'vitepress/theme';
+import '@catppuccin/vitepress/theme/mocha/mauve.css';
+import './style.css';
+
+export default {
+  extends: DefaultTheme,
+  enhanceApp({ app }) {}
+};
