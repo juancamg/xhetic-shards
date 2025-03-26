@@ -2,11 +2,13 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "! xhetic .. /",
-  description: "Mi proyecto increíble sobre hacking y pentesting",
+  description: "Mi bitácora pública sobre ciberseguridad y hacking ético",
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap', rel: 'stylesheet' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' }],
+    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' }],
   ],
   markdown: {
     theme: {
@@ -49,61 +51,83 @@ export default defineConfig({
     sidebar: {
       '/': [
         {
-          text: "Técnicas de Hacking",
+          text: "Vulnerabilidades y Técnicas",
           collapsed: true,
           items: [
             { text: "XSS", link: "/hacking/xss" },
             { text: "SQL Injection", link: "/hacking/sql-injection" },
-            { text: "Phishing", link: "/hacking/phishing" },
+            { text: "Reverse Shells", link: "/hacking/reverse-shells" },
+            { text: "Privilege Escalation", link: "/hacking/privilege-escalation" },
           ],
         },
         {
-          text: "Herramientas y Comandos",
+          text: "Herramientas",
           collapsed: true,
           items: [
-            { text: "Nmap", link: "/commands/nmap" },
-            { text: "John the Ripper", link: "/commands/john-the-ripper" },
-            { text: "Metasploit", link: "/commands/metasploit" },
+            { text: "Nmap", link: "/tools/nmap" },
+            { text: "Mimikatz", link: "/tools/mimikatz" },
+            { text: "Metasploit", link: "/tools/metasploit" },
           ],
         },
         {
-          text: "Guías Prácticas",
+          text: "CVEs",
           collapsed: true,
           items: [
-            { text: "Writeup: Explotando un Servidor", link: "/guides/server-exploit" },
-            { text: "Tutorial: Configuración de Kali Linux", link: "/guides/kali-setup" },
+            { text: "CVE-2017-0144 (EternalBlue)", link: "/cves/cve-2017-0144" },
+            { text: "CVE-2021-44228 (Log4Shell)", link: "/cves/cve-2021-44228" },
+          ],
+        },
+        {
+          text: "Glosario",
+          collapsed: true,
+          items: [
+            { text: "Payload", link: "/glossary/payload" },
+            { text: "Exploit", link: "/glossary/exploit" },
+            { text: "Zero-day", link: "/glossary/zero-day" },
           ],
         },
       ],
       '/hacking/': [
         {
-          text: "Técnicas de Hacking",
+          text: "Vulnerabilidades y Técnicas",
           collapsed: false,
           items: [
             { text: "XSS", link: "/hacking/xss" },
             { text: "SQL Injection", link: "/hacking/sql-injection" },
-            { text: "Phishing", link: "/hacking/phishing" },
+            { text: "Reverse Shells", link: "/hacking/reverse-shells" },
+            { text: "Privilege Escalation", link: "/hacking/privilege-escalation" },
           ],
         },
       ],
-      '/commands/': [
+      '/tools/': [
         {
-          text: "Herramientas y Comandos",
+          text: "Herramientas",
           collapsed: false,
           items: [
-            { text: "Nmap", link: "/commands/nmap" },
-            { text: "John the Ripper", link: "/commands/john-the-ripper" },
-            { text: "Metasploit", link: "/commands/metasploit" },
+            { text: "Nmap", link: "/tools/nmap" },
+            { text: "Mimikatz", link: "/tools/mimikatz" },
+            { text: "Metasploit", link: "/tools/metasploit" },
           ],
         },
       ],
-      '/guides/': [
+      '/cves/': [
         {
-          text: "Guías Prácticas",
+          text: "CVEs",
           collapsed: false,
           items: [
-            { text: "Writeup: Explotando un Servidor", link: "/guides/server-exploit" },
-            { text: "Tutorial: Configuración de Kali Linux", link: "/guides/kali-setup" },
+            { text: "CVE-2017-0144 (EternalBlue)", link: "/cves/cve-2017-0144" },
+            { text: "CVE-2021-44228 (Log4Shell)", link: "/cves/cve-2021-44228" },
+          ],
+        },
+      ],
+      '/glossary/': [
+        {
+          text: "Glosario",
+          collapsed: false,
+          items: [
+            { text: "Payload", link: "/glossary/payload" },
+            { text: "Exploit", link: "/glossary/exploit" },
+            { text: "Zero-day", link: "/glossary/zero-day" },
           ],
         },
       ],
@@ -115,7 +139,6 @@ export default defineConfig({
       linkText: 'Volver al Inicio',
       code: '404'
     },
-    // Traducciones de los mensajes del tema
     outline: {
       label: 'En esta página'
     },
@@ -126,5 +149,8 @@ export default defineConfig({
     darkModeSwitchLabel: 'Apariencia',
     returnToTopLabel: 'Volver arriba',
     sidebarMenuLabel: 'Menú',
+    lastUpdated: {
+      text: 'Última actualización'
+    }
   },
 });

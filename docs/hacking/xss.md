@@ -1,17 +1,30 @@
-# Cross-Site Scripting (XSS)
+---
+title: "XSS - Cross-Site Scripting"
+description: "Guía completa sobre la vulnerabilidad XSS en ciberseguridad"
+---
+
+# XSS - Cross-Site Scripting
+
+> **Entrada en construcción.**  
+> Este contenido se está desarrollando y pronto estará completo.
 
 ## ¿Qué es XSS?
-XSS es una vulnerabilidad que permite a atacantes inyectar scripts maliciosos en páginas web vistas por otros usuarios.
-
-## ¿Para qué sirve?
-Se usa para robar cookies, redirigir usuarios, o mostrar contenido malicioso.
+Aquí explicaré qué es el Cross-Site Scripting (XSS), una vulnerabilidad que permite inyectar scripts maliciosos en páginas web vistas por otros usuarios.
 
 ## Tipos de XSS
-- **Reflejado (Reflected):** El script se refleja en la respuesta del servidor.
-- **Persistente (Stored):** El script se almacena en el servidor (ej. en una base de datos).
-- **DOM-based:** Se ejecuta en el cliente manipulando el DOM.
+- Reflejado (Reflected)
+- Almacenado (Stored)
+- Basado en DOM (DOM-based)
 
 ## ¿Cómo funciona?
-Un atacante encuentra un campo de entrada (como un formulario) que no valida correctamente y envía algo como:
-```html
-<script>alert('Hacked!');</script>
+Se detallará cómo los atacantes explotan XSS para ejecutar código en el navegador de las víctimas.
+
+## Explotación
+Incluiré ejemplos éticos de cómo se puede aprovechar esta vulnerabilidad, con payloads como `<script>alert('XSS')</script>`.
+
+## Mitigación
+Explicaré cómo prevenir XSS con técnicas como sanitización de entradas y cabeceras CSP.
+
+## Recursos
+- Ejemplos de scripts y payloads.
+- Enlaces a herramientas como Burp Suite.
