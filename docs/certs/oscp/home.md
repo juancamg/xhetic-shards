@@ -1,4 +1,4 @@
-# Hacking
+# OSCP
 
 > **Entrada en construcción.**  
 ```bash

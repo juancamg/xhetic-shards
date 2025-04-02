@@ -1,9 +1,9 @@
 ---
-title: "Payload"
-description: "Definición de Payload"
+title: "Inyección SQL"
+description: "Guía completa sobre la vulnerabilidad Inyección SQL"
 ---
 
-# Payload
+# Inyección SQL
 
 > **Entrada en construcción.**  
 ```bash

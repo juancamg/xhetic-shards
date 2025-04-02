@@ -78,9 +78,31 @@ export default defineConfig({
           ],
         },
         {
+          text: "Certificaciones",
+          collapsed: true,
+          items: [
+            {
+              text: "eJPTv2",
+              collapsed: true,
+              items: [
+                { text: "Information Gathering", link: "/certs/ejptv2/information-gathering/introduction" },
+                { text: "Footprinting", link: "/certs/ejptv2/footprinting/introduction" },
+              ],
+            },
+            {
+              text: "OSCP",
+              collapsed: true,
+              items: [
+                { text: "Tema1 OSCP", link: "/certs/oscp/tema1" },
+              ],
+            },
+          ],
+        },
+        {
           text: "Glosario",
           collapsed: true,
           items: [
+            { text: "ISP", link: "/glossary/ISP" },
             { text: "Payload", link: "/glossary/payload" },
             { text: "Exploit", link: "/glossary/exploit" },
             { text: "Zero-day", link: "/glossary/zero-day" },
@@ -125,9 +147,55 @@ export default defineConfig({
           text: "Glosario",
           collapsed: false,
           items: [
+            { text: "ISP", link: "/glossary/ISP" },
             { text: "Payload", link: "/glossary/payload" },
             { text: "Exploit", link: "/glossary/exploit" },
             { text: "Zero-day", link: "/glossary/zero-day" },
+          ],
+        },
+      ],
+      '/certs/ejptv2/': [
+        {
+          text: "eJPT v2",
+          collapsed: false,
+          items: [
+            {
+              text: "Information Gathering",
+              collapsed: true,
+              items: [
+                { text: "Introducción", link: "/certs/ejptv2/information-gathering/introduction" },
+                { text: "Recolección Pasiva", link: "/certs/ejptv2/information-gathering/passive" },
+                { text: "Recolección Activa", link: "/certs/ejptv2/information-gathering/active" },
+              ],
+            },
+            { text: "Footprinting", link: "/certs/ejptv2/footprinting/introduction" }
+          ],
+        },
+      ],
+      '/certs/ejptv2/information-gathering/': [
+        {
+          text: "eJPT v2",
+          collapsed: false,
+          items: [
+            {
+              text: "Information Gathering",
+              collapsed: false,
+              items: [
+                { text: "Introducción", link: "/certs/ejptv2/information-gathering/introduction" },
+                { text: "Recolección Pasiva", link: "/certs/ejptv2/information-gathering/passive" },
+                { text: "Recolección Activa", link: "/certs/ejptv2/information-gathering/active" },
+              ],
+            },
+            { text: "Footprinting", link: "/certs/ejptv2/footprinting/introduction" }
+          ],
+        },
+      ],
+      '/certs/oscp/': [
+        {
+          text: "OSCP",
+          collapsed: false,
+          items: [
+            { text: "Tema1 OSCP", link: "/certs/oscp/tema1" },
           ],
         },
       ],
@@ -149,8 +217,5 @@ export default defineConfig({
     darkModeSwitchLabel: 'Apariencia',
     returnToTopLabel: 'Volver arriba',
     sidebarMenuLabel: 'Menú',
-    lastUpdated: {
-      text: 'Última actualización'
-    }
   },
 });
