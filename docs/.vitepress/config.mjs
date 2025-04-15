@@ -86,7 +86,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: "Information Gathering", link: "/certs/ejptv2/information-gathering/introduction" },
-                { text: "Footprinting", link: "/certs/ejptv2/footprinting/introduction" },
+                { text: "Footprinting & Scanning", link: "/certs/ejptv2/footprinting-scanning/introduction" },
               ],
             },
             {
@@ -168,7 +168,16 @@ export default defineConfig({
                 { text: "Recolección Activa", link: "/certs/ejptv2/information-gathering/active" },
               ],
             },
-            { text: "Footprinting", link: "/certs/ejptv2/footprinting/introduction" }
+            { 
+              text: "Footprinting & Scanning", link: "/certs/ejptv2/footprinting-scanning/introduction",
+              collapsed: true,
+              items: [
+                { text: "Introducción", link: "/certs/ejptv2/footprinting-scanning/introduction" },
+                { text: "Conceptos básicos redes", link: "/certs/ejptv2/footprinting-scanning/networking_primer" },
+                { text: "Descubrimiento de Hosts", link: "/certs/ejptv2/footprinting-scanning/host_discovery" },
+                { text: "Escaneo de Puertos", link: "/certs/ejptv2/footprinting-scanning/port_scanning" },
+              ],
+            }
           ],
         },
       ],
@@ -186,7 +195,16 @@ export default defineConfig({
                 { text: "Recolección Activa", link: "/certs/ejptv2/information-gathering/active" },
               ],
             },
-            { text: "Footprinting", link: "/certs/ejptv2/footprinting/introduction" }
+            { 
+              text: "Footprinting & Scanning", link: "/certs/ejptv2/footprinting-scanning/introduction",
+              collapsed: true,
+              items: [
+                { text: "Introducción", link: "/certs/ejptv2/footprinting-scanning/introduction" },
+                { text: "Conceptos básicos redes", link: "/certs/ejptv2/footprinting-scanning/networking_primer" },
+                { text: "Descubrimiento de Hosts", link: "/certs/ejptv2/footprinting-scanning/host_fiscovery" },
+                { text: "Escaneo de Puertos", link: "/certs/ejptv2/footprinting-scanning/port_scanning" },
+              ],
+             }
           ],
         },
       ],

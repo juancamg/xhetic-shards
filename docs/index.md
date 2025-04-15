@@ -8,7 +8,7 @@ next: false
 *Las herramientas del maestro.*  
 
 Esta no es una web cualquiera: es mi **bitácora pública de aprendizaje**.  
-Aquí encontrarás todo lo que descubro sobre ciberseguridad, *sin filtros ni edición*: conocimiento práctico que voy destilando mientras avanzo. Cada entrada es un **shard** de mi progreso.
+Aquí encontrarás todo lo que descubro sobre ciberseguridad: conocimiento práctico que voy destilando mientras avanzo. Cada entrada es un **shard** de mi progreso.
 
 ---
 
@@ -26,7 +26,7 @@ Aquí encontrarás todo lo que descubro sobre ciberseguridad, *sin filtros ni ed
 ---
 
 ### **Mi compromiso (y el tuyo)**  
-> ***"La tecnología no es buena ni mala, pero tampoco neutral."***  
+> ***"La tecnología no es mala, pero tampoco buena"***  
 
 **Yo elijo usarla para construir.** Y si estás aquí, imagino que tú también.  
 El hacking es un **súperpoder**: con él podemos *proteger sistemas, educar a otros y crear soluciones*.  
