@@ -166,6 +166,7 @@ export default defineConfig({
                 { text: "Introducción", link: "/certs/ejptv2/information-gathering/introduction" },
                 { text: "Recolección Pasiva", link: "/certs/ejptv2/information-gathering/passive" },
                 { text: "Recolección Activa", link: "/certs/ejptv2/information-gathering/active" },
+                { text: "Laboratorios", link: "/certs/ejptv2/information-gathering/labs" },
               ],
             },
             { 
@@ -176,6 +177,8 @@ export default defineConfig({
                 { text: "Conceptos básicos redes", link: "/certs/ejptv2/footprinting-scanning/networking_primer" },
                 { text: "Descubrimiento de Hosts", link: "/certs/ejptv2/footprinting-scanning/host_discovery" },
                 { text: "Escaneo de Puertos", link: "/certs/ejptv2/footprinting-scanning/port_scanning" },
+                { text: "Evasión, rendimiento y exportación", link: "/certs/ejptv2/footprinting-scanning/evasion_output" },
+                { text: "Laboratorios", link: "/certs/ejptv2/footprinting-scanning/labs" },
               ],
             }
           ],
@@ -193,6 +196,7 @@ export default defineConfig({
                 { text: "Introducción", link: "/certs/ejptv2/information-gathering/introduction" },
                 { text: "Recolección Pasiva", link: "/certs/ejptv2/information-gathering/passive" },
                 { text: "Recolección Activa", link: "/certs/ejptv2/information-gathering/active" },
+                { text: "Laboratorios", link: "/certs/ejptv2/information-gathering/labs" },
               ],
             },
             { 
@@ -203,6 +207,8 @@ export default defineConfig({
                 { text: "Conceptos básicos redes", link: "/certs/ejptv2/footprinting-scanning/networking_primer" },
                 { text: "Descubrimiento de Hosts", link: "/certs/ejptv2/footprinting-scanning/host_fiscovery" },
                 { text: "Escaneo de Puertos", link: "/certs/ejptv2/footprinting-scanning/port_scanning" },
+                { text: "Evasión, rendimiento y exportación", link: "/certs/ejptv2/footprinting-scanning/evasion_output" },
+                { text: "Laboratorios", link: "/certs/ejptv2/footprinting-scanning/labs" },
               ],
              }
           ],
